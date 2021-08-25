@@ -1,66 +1,91 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<head>
-  <meta charset="utf-8">
-  <title>Moja pierwsza strona</title>
-  <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
-  <link rel="icon" href="favicon.ico">
-</head>
-
-<body>
-  <div class="top-container">
-    <img class="top-cloud" src="images/cloud.png" alt="cloud">
-    <div class="title-text">
-      <h1>Moja pierwsza strona</h1>
-      <h2 class="title-text2">(w miarę wyglądająca)</h2>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat|Sacramento" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="favicon.ico">
+    <title>Upgraded First Site</title>
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">Moja Pierwsza Strona</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#gora">Góra</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#witaj">Witaj</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#zainteresowania">Zainteresowania</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#stopka">Stopka</a>
+        </li>
+      </ul>
     </div>
-    <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
-    <img class="mountain" src="images/mountain.png" alt="mountain-img">
   </div>
-
-  <div class="middle-container">
-    <div class="profile">
-      <img src="images/w.jpg" alt="angela-profile-img">
-      <h2>Witaj</h2>
-      <p class="intro">Aktualnie jestem małą dzidzią. Mam na imię Laura i mam pół roczku.</p>
-    </div>
-    <hr>
-    <div class="skills">
-      <h2>Zainteresowania</h2>
-      <div class="skill-row">
-        <img class="code-img" src="images/s.jpg" alt="code-img">
-
-        <h3>Jedzenie</h3>
-        <p class="a">Uwielbiam mlenio. Kaszka też mi nie straszna. Moim ulubionym daniem są jednak biszkopty z herbatką.</p>
-
+</nav>
+    <div class="top-container" id="gora">
+      <img class="top-cloud" src="images/cloud.png" alt="cloud">
+      <div class="title-text">
+        <h1>Moja pierwsza strona</h1>
+        <h2 class="title-text2">(w miarę wyglądająca)</h2>
       </div>
-      <div class="skill-row">
-        <img class="chilli-img" src="images/s.jpg" alt="chillies-img">
+      <img class="bottom-cloud" src="images/cloud.png" alt="cloud">
+      <img class="mountain" src="images/mountain.png" alt="mountain-img">
+    </div>
 
-        <h3>Uśmiech</h3>
-        <p class="b">Uwielbiam się cieszyć. Uśmiechać japę od ucha do ucha. Kocham dawać wszystkim radość.</p>
+    <div class="middle-container" id="witaj">
+      <div class="profile">
+        <img src="images/w.jpg" alt="angela-profile-img">
+        <h2>Witaj</h2>
+        <p class="intro">Aktualnie jestem małą dzidzią. Mam na imię Laura i mam pół roczku.</p>
+      </div>
+      <hr>
+      <div class="skills" id="zainteresowania">
+        <h2>Zainteresowania</h2>
+        <div class="skill-row">
+          <img class="code-img" src="images/s.jpg" alt="code-img">
 
+          <h3>Jedzenie</h3>
+          <p class="a">Uwielbiam mlenio. Kaszka też mi nie straszna. Moim ulubionym daniem są jednak biszkopty z herbatką.</p>
+
+        </div>
+        <div class="skill-row">
+          <img class="chilli-img" src="images/s.jpg" alt="chillies-img">
+
+          <h3>Uśmiech</h3>
+          <p class="b">Uwielbiam się cieszyć. Uśmiechać japę od ucha do ucha. Kocham dawać wszystkim radość.</p>
+
+        </div>
+      </div>
+      <br/>
+      <hr>
+      <div class="contact-me" id="stopka">
+        <h2>Zostaniesz ze mną?</h2>
+        <h3>Potrzebuję opieki, gdy Mama i Tata pójdą do pracy.</h3>
+        <p class="contact-message">Jeżeli uwielbiasz małe dziewczynki takie jak ja, zadzwoń do nas. Ja też sie uwielbiam, a z chęcią kogoś przytule.</p>
+        <a class="btn" href="mailto:ilove@hotwings.com">Napisz</a>
       </div>
     </div>
-    <br/>
-    <hr>
-    <div class="contact-me">
-      <h2>Zostaniesz ze mną?</h2>
-      <h3>Potrzebuję opieki, gdy Mama i Tata pójdą do pracy.</h3>
-      <p class="contact-message">Jeżeli uwielbiasz małe dziewczynki takie jak ja, zadzwoń do nas. Ja też sie uwielbiam, a z chęcią kogoś przytule.</p>
-      <a class="btn" href="mailto:ilove@hotwings.com">Napisz</a>
+
+
+    <div class="bottom-container">
+      <a class="footer-link" href="">LinkedIn</a>
+      <a class="footer-link" href="">Twitter</a>
+      <a class="footer-link" href="">Facebook</a>
+      <p class="copyright">© 2021 Patryk Dudka</p>
     </div>
-  </div>
-
-
-  <div class="bottom-container">
-    <a class="footer-link" href="">LinkedIn</a>
-    <a class="footer-link" href="">Twitter</a>
-    <a class="footer-link" href="">Facebook</a>
-    <p class="copyright">© 2021 Patryk Dudka</p>
-  </div>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  </body>
 </html>
