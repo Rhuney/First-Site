@@ -97,7 +97,7 @@ a:hover {
 .bottom-cloud {
   position: absolute;
   left: 250px;
-  bottom: 300px;
+  bottom: 200px;
 }
 
 .code-img {
@@ -147,4 +147,8 @@ a:hover {
 }
 .navbar-inner{
   background-color: transparent;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
